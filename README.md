@@ -13,18 +13,6 @@ This repository contains my solution to the [House Prices: Advanced Regression T
 
 ---
 
-## 📂 Project Structure
-
-```
-.
-├── train.csv                    # Training dataset from Kaggle
-├── test.csv                     # Test dataset from Kaggle
-├── data_description.txt         # Feature description file
-├── house_price_model.ipynb      # Main notebook
-├── catboost_bestparam_submission.csv  # Final submission
-└── README.md                    # This file
-```
-
 ---
 
 ## 🔍 Exploratory Data Analysis
@@ -86,8 +74,6 @@ CatBoostRegressor(
 )
 ```
 
-✅ **Validation RMSE**: *~ your_best_score_here (log scale)*
-
 ---
 
 ## 📤 Submission Strategy
@@ -95,8 +81,12 @@ CatBoostRegressor(
 - Predictions were transformed using `np.expm1()` to reverse log1p.
 - Clipping was applied at the 1st and 99th percentiles to remove extreme outliers.
 - Output saved to `catboost_bestparam_submission.csv`.
-
 ---
+
+## 📤 Results
+- Leaderboard Rank: 444 / 4677 (Top 10%)
+- Best Model: Custom-tuned CatBoost Regressor
+- Validation RMSE : 0.12215
 
 ## 🛠 Requirements
 
@@ -110,11 +100,7 @@ pip install catboost category_encoders scikit-learn matplotlib seaborn
 
 ## 👤 Author
 
-**Madhi**  
-Master's student in **Big Data & Artificial Intelligence**  
-Paris-Dauphine | Tunis  
-🇹🇳
-
+**Madhi Mohamed Yassine**  
 ---
 
 ## 📚 Acknowledgments
